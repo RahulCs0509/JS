@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>getElementsByClassName</title>
+</head>
+
+<body>
+    <h1 id="blue">1. Java</h1>
+    <h1 class="orange">2. Java-script</h1>
+    <h1 class="orange">3. SPRING</h1>
+    <h1 class="orange">4. REACT</h1>
+    <h1 id="blue">5.HTML </h1>
+    <button onclick="color()">orange</button>
+
+
+    <script>
+        function color() {
+            var ele = document.getElementsByClassName("orange");
+            console.log(ele);
+
+            for (i = 0; i <= 2; i++) {
+                ele[i].style.color = "orange";
+            }
+        }
+    </script>
+</body>
+
+</html>

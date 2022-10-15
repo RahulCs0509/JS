@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form example</title>
+</head>
+
+<body>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias error deleniti aliquam repudiandae pariatur quia, voluptatum incidunt sed voluptatem excepturi minima ex saepe eius quod velit quas assumenda vero!
+    <form action="RegistrationServlet" method="post">
+        <form action="RegistrationServlet" method="post">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td> <input onkeyup="fun1()" type="text" name="user" /></td>
+                    <td id="msg1"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td> <input type="password" name="pwd" /></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" />M
+                        <input type="radio" name="gender" /> F</td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td><input type="checkbox" name="HTML" />HTML
+                        <input type="checkbox" name="CSS" />CSS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" onclick="return validate()" value="Register" />
+                        <input type="reset" /></td>
+                </tr>
+            </table>
+        </form>
+</body>
+
+</html>

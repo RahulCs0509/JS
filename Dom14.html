@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Day 2 document.getElementById</title>
+</head>
+
+<body>
+    <h1 id="heading1">html</h1>
+    <h1 id="heading2">css</h1>
+    <h1 id="heading3">js</h1>
+    <button onclick="col()">color</button>
+    <button onclick="col1()">change</button>
+    <script>
+        function col() {
+
+            var h = document.getElementById("heading1")
+            console.log(h)
+            h.style.color = "red"
+            h.style.fontStyle = "italic"
+        }
+
+        function col1() {
+
+            var h1 = document.getElementById("heading2")
+            console.log(h1)
+            h1.style.border = "2px solid green"
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<body>
+    <h1 id="heading1">DOM</h1>
+    <h1 id="heading2">JS</h1>
+    <button onclick="ch()">change</button>
+</body>
+<script>
+    // var x = document.getElementById("heading1").innerHTML
+    // console.log(x)
+
+
+    function ch() {
+
+        //    code to replace the data
+        document.getElementById("heading1").innerHTML = "Document Object Model"
+        document.getElementById("heading2").innerHTML = "java script"
+
+        // code to change the style
+        document.getElementById("heading1").style.color = "red"
+        document.getElementById("heading1").style.border = "2px dotted green"
+        document.getElementById("heading1").style.width = "50vh"
+        document.getElementById("heading1").style.backgroundColor = "green"
+        document.getElementById("heading1").style.textAlign = "center"
+
+        document.getElementById("heading2").style.width = "50vh"
+        document.getElementById("heading2").style.border = "3px solid blue"
+        document.getElementById("heading2").style.textAlign = "center"
+
+
+
+        // swap the code
+        document.getElementById("heading1").innerHTML = "java script"
+        document.getElementById("heading2").innerHTML = "Document Object Model"
+
+
+    }
+</script>
+
+</html>

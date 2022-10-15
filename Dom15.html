@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Select Scripting language</h1>
+    <input type="radio" name="r1" id="input1" value="java">java
+    <br><br>
+    <input type="radio" name="r1" id="input2" value="java script">java script
+    <br><br>
+    <input type="radio" name="r1" id="input3" value="html">html
+    <br><br>
+    <input type="radio" name="r1" id="input4" value="css">css
+    <br><br>
+    <input type="radio" name="r1" id="input5" value="python">python
+    <br><br>
+    <input type="radio" name="r1" id="input6" value="c#">c#
+    <br><br>
+    <button onclick="vali()">Sumbit</button>
+</body>
+<script>
+    function vali() {
+        var x1 = document.getElementById("input1")
+        var x2 = document.getElementById("input2")
+        var x3 = document.getElementById("input3")
+        var x4 = document.getElementById("input4")
+        var x5 = document.getElementById("input5")
+        var x6 = document.getElementById("input6")
+        if (x1.checked == true) {
+            alert("selected answer is " + x1.value)
+        } else if (x2.checked == true) {
+            alert("selected answer is " + x2.value)
+        } else if (x3.checked == true) {
+            alert("selected answer is " + x3.value)
+        } else if (x4.checked == true) {
+            alert("selected answer is " + x4.value)
+        } else if (x5.checked == true) {
+            alert("selected answer is " + x5.value)
+        } else if (x6.checked == true) {
+            alert("selected answer is " + x6.value)
+        } else {
+            alert("no answer is selected ")
+        }
+    }
+</script>
+
+</html>

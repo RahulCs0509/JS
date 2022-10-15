@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- frist part -->
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: black;
+            /* width: 10vh; */
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<!-- Second part -->
+
+
+<body>
+    <h1>html</h1>
+    <h1 id="heading"> js</h1>
+    <h1>react </h1>
+    <h2>DOM</h2>
+    <h2>document Object Modal</h2>
+</body>
+
+<script>
+    var tag = document.getElementsByTagName("h1")
+    console.log(tag)
+    tag[0].style.color = "red"
+    tag[2].style.fontStyle = "italic"
+    tag[2].style.color = "blue"
+    tag[1].style.backgroundColor = "green"
+</script>
+
+</html>
